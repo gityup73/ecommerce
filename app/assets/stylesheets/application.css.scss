@@ -24,16 +24,24 @@
  }
 
  h1 {
- 	color: #3366ff;
+ 	color: #003399;
  }
 
 .navbar {
 	background-color: #003399;
 }
 
-.nav.navbar-nav.navbar-right li a {
-	color: white
-}
-.nav.navbar-nav.navbar-left li a {
+.navbar-default .navbar-brand {
     color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: lightgrey;
+}
+
+.navbar .nav > li > a {color: white;}
+.navbar .nav > li > a:hover {color: lightgrey;}
+
+.images {
+	text-align: center;
 }
