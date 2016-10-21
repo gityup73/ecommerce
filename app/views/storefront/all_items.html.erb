@@ -21,10 +21,11 @@
 		  							<div class="hidden">
 		  								<%= number_field_tag :product_id, product.id %>
 		  							</div>
-		  							<p><%= number_field_tag :quantity, nil, placeholder: "how many?" %></p>
+		  							<p><%= number_field_tag :quantity, nil, min: 1, placeholder: "how many?" %></p>
 		  							<p><%= submit_tag "Buy It!", class: "btn btn-danger" %></p>
 		  						<% end %>
 		  					</p>
+		  					
 		  				</div>
 		  		</div>
 		 	</div>

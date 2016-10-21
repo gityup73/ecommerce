@@ -15,6 +15,15 @@
 		  				<p><%= product.name %></p>
 		  				<div style="height: 150px">
 		  					<p>Made by: <%= product.brand %></p>
+		  					<p>
+		  						<%= form_tag('/add_to_cart') do %>
+		  							<div class="hidden">
+		  								<%= number_field_tag :product_id, product.id %>
+		  							</div>
+		  							<p><%= number_field_tag :quantity, nil, placeholder: "how many?" %></p>
+		  							<p><%= submit_tag "Buy It!", class: "btn btn-danger" %></p>
+		  						<% end %>
+		  					</p>
 		  				</div>
 		  		</div>
 		 	</div>

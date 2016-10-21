@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :line_items
   resources :orders
 
+  post 'order_complete' => 'cart#order_complete'
 
   post'add_to_cart' => 'cart#add_to_cart'
 
